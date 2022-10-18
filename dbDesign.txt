@@ -1,0 +1,40 @@
+AUTO
+
+- id << int - primary key unique auto_increment NOT_NULL
+- modello << string - varchar(60) NOT_NULL
+- alimentazione << string - varchar(24) NOT_NULL
+- anno_produzione << date - year NOT_NULL
+- casa_automobilistica << string- varchar(32) NOT_NULL
+- cilindrata << number - int
+
+
+
+IN_VENDITA
+- id_vendita << int - primary key unique auto_increment NOT_NULL
+- id_auto << chiave esterna NOT_NULL
+- prezzo << number- MEDIUMINT NOT_NULL
+- km_Percorsi << number MEDIUMINT 
+- targa << string -- varchar(7)
+- id_proprietario_attuale << chiave esterna NULL
+- colore << string varchar(32) NOT_NULL
+- arrivo_concessionaria << date -date
+
+CLIENTI
+- Nome << varchar(50)
+- cognome<< varchar(50)
+- telefono<< int
+- N_documento<< varchar(50)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
